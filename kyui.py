@@ -11,29 +11,6 @@ bannerArt = """\
 |__|\__|_|___|___|_______|_______|TM_______________________________________________________________"""
 
 
-optionsSubPage = f"""\
--------------------------------------------------------------
- GENERAL:
- 
-    Verbose Logging:      {VERBOSE_LOGGING}
-    Banner Art:           {BANNER_ART_ENABLED}
-  
- URL REQUESTS:
- 
-    Min Interval:         {MIN_REQUEST_INTERVAL}
-    Max Retry:            {MAX_RETRY}
-    Delay Retry:          {DELAY_ON_RETRY}
-    Response Timeout:     {RESPONSE_TIMEOUT}
-"""
-
-
-notesSubPage = """\
--------------------------------------------------------------
- NOTES:
-Future notes will go here
-"""
-
-
 class UserInterface:
     def __init__(self, defaultUIColor: str, artEnabled: bool, scribeObject: object):
         self.uiColor = defaultUIColor
